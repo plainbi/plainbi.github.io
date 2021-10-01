@@ -62,6 +62,38 @@
 	color:rgb(102, 102, 102);
 	margin:0;
  }
+ .container {
+   text-align: center;
+   padding-top: 100px;
+   padding-left: 50px;
+   padding-right: 50px;
+ }
+ .container a {
+    text-decoration:none;
+	display: inline-flex;
+	line-height: 50px;
+	color: #000;
+ }
+ .container span {
+    font-size:14px;
+	font-family:monospace;
+	
+ }
+ .container img.avatar {
+    height:50px;
+    width:50px;
+	padding-left:10px;
+	padding-right:10px;
+	filter: gray;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+ }
+ 
+ /* Disable grayscale on hover */
+ .container img.avatar:hover {
+    -webkit-filter: grayscale(0);
+    filter: none;
+ }
  </style>
 
 </head>
@@ -77,6 +109,12 @@
     <h1>Data.</h1>
     <h2>Much more accessible.</h2>
   </div>
+</div>
+<div class="container">
+  <a href="https://www.xing.com/profile/Markus_Kolp" target="_blank">
+    <span>see profile on --&gt; </span>
+    <img class="avatar" src="xing.png" alt="see profile on xing"></img>
+  </a>
 </div>
 </body>
 
